@@ -44,6 +44,9 @@
     </div>
     <div>
         <img src="img/Quidditchpitch.jpg" class="banner-image"/>
+        <p class="back-light"><b class="back-light-text">
+            "Play Quidditch, have fun, keep fit!" - H. Potter</b>
+        </p>
     </div>
     <div class="banner" style="margin-top: -4px">
         <div class="arrow-left"></div>
@@ -968,6 +971,20 @@
                 left: '23%'
             }, 500);
         });
+
+        var value = 0;
+        var text = ["\"Play Quidditch, have fun, keep fit!\" - H. Potter", "\"SQRL is enjoyable for the whole family\" - R. Weasley", "\"Nothing beats a good competitive Quidditch game\" - D. Malfoy"]
+        setInterval(function(){
+            $(".back-light-text").stop().css('opacity', '0').html(function (_, oldText) {
+                value++;
+                if (value > 2) {
+                    value = 0;
+                }
+                return text[value];
+            }).animate({
+                opacity: 1 // Animate opacity to 1 with a duration of 2 sec
+            }, 2000);
+        },5000);
     </script>
     <script type="text/javascript">
         //this script allows unselection of the radio button for defaulting

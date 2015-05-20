@@ -126,6 +126,16 @@ ul.menu li:hover ul {
     height: auto;
 }
 
+.back-light {
+    background-color: rgba(0, 0, 0, 0.50);
+    padding: 10px;
+    font-size: 18px;
+    top: 45%;
+    right: 25%;
+    position: absolute;
+    width: 551px;
+}
+
 .login-text {
     color: white;
     float:right;
@@ -145,7 +155,7 @@ ul.menu li:hover ul {
     border-left: 5px solid #f0f0f0;
 }
 
-.news .more {
+.more {
     display: block;
     color: #333;
     text-decoration: none;
@@ -153,6 +163,48 @@ ul.menu li:hover ul {
     border: none;
     font-size: 12px;
 }
+
+.readmore {
+    -moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+    box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5));
+    background:-moz-linear-gradient(top, #79bbff 5%, #378de5 100%);
+    background:-webkit-linear-gradient(top, #79bbff 5%, #378de5 100%);
+    background:-o-linear-gradient(top, #79bbff 5%, #378de5 100%);
+    background:-ms-linear-gradient(top, #79bbff 5%, #378de5 100%);
+    background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5',GradientType=0);
+    background-color:#79bbff;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    border:1px solid #84bbf3;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #528ecc;
+}
+.readmore:hover {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff));
+    background:-moz-linear-gradient(top, #378de5 5%, #79bbff 100%);
+    background:-webkit-linear-gradient(top, #378de5 5%, #79bbff 100%);
+    background:-o-linear-gradient(top, #378de5 5%, #79bbff 100%);
+    background:-ms-linear-gradient(top, #378de5 5%, #79bbff 100%);
+    background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff',GradientType=0);
+    background-color:#378de5;
+}
+.readmore:active {
+    position:relative;
+    top:1px;
+}
+
 
 .logout-button { /* Borrowed from http://www.bestcssbuttongenerator.com/#/11*/
     margin-left:10px;

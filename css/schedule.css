@@ -88,6 +88,7 @@ article {
 
 .tableForLevel {
     display: inline-block;
+    width: 70%;
 }
 
 /*
@@ -97,7 +98,8 @@ article {
     border-collapse:collapse;
     border-spacing:0;
     empty-cells:show;
-    border:1px solid #cbcbcb
+    border:1px solid #cbcbcb;
+    width: 100%;
 }
 
 .pure-table td,.pure-table th{
@@ -107,7 +109,6 @@ article {
     margin:0;
     overflow:visible;
     padding:.5em 1em;
-    width: 100px;
     height: 35px;
 }
 
@@ -189,6 +190,11 @@ tbody tr:hover {
     margin-left: -14px;
     margin-top: -11px;
     z-index: -1;
+    width: 100%;
+}
+
+article {
+    width: 100%;
 }
 
 .cd-popup-trigger-edit:hover {

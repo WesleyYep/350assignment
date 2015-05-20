@@ -49,6 +49,9 @@
     </div>
     <div>
         <img src="img/quidditchpitch.jpg" class="banner-image"/>
+        <p class="back-light"><b class="back-light-text">
+           "Play Quidditch, have fun, keep fit!" - H. Potter</b>
+        </p>
     </div>
     <div class="banner" style="margin-top: -4px">
         <div class="arrow-left"></div>
@@ -145,6 +148,7 @@
                Staying around for the summer? Come along and join the summer Quidditch recreational league for 2015.
                 Guaranteed to be a great way to have fun, keep fit, and play with friends and family.
             </p><br/>
+            <a href="#" class="readmore">Read more  &#187</a>
             <table style="margin-top: 50px">
                 <tr>
                     <td style="width: 200px">
@@ -185,17 +189,14 @@
             <p class="news">
                 Adult Casual: Builders vs Spartans has been moved to Eastern stadium<br/>
                 June 20, 2015
-                <a href="#" class="more">Read More &#187</a>
             </p>
             <p class="news">
                 Legends: Leopards beat Tigers 150-60!<br/>
                 June 20, 2015
-                <a href="#" class="more">Read More &#187</a>
             </p>
             <p class="news">
                 Adult Serious: Kings vs Knights postponed to June 20, at Midlands<br/>
                 June 13, 2015
-                <a href="#" class="more">Read More &#187</a>
             </p>
             <p class="news">
                 All: Sorting week begins tomorrow! Are you ready? <br/>
@@ -283,6 +284,20 @@
                 left: '23%'
             }, 500);
         });
+
+        var value = 0;
+        var text = ["\"Play Quidditch, have fun, keep fit!\" - H. Potter", "\"SQRL is enjoyable for the whole family\" - R. Weasley", "\"Nothing beats a good competitive Quidditch game\" - D. Malfoy"]
+        setInterval(function(){
+            $(".back-light-text").stop().css('opacity', '0').html(function (_, oldText) {
+                value++;
+                if (value > 2) {
+                    value = 0;
+                }
+                return text[value];
+            }).animate({
+                opacity: 1 // Animate opacity to 1 with a duration of 2 sec
+            }, 2000);
+        },5000);
     </script>
 </body>
 </html>
