@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Schedules and Scores</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/schedule.css">
+    <link rel="stylesheet" type="text/css" href="css/form1.css">
+    <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <link rel="icon" type="image/png" href="favicon.ico">
+</head>
+<body>
+    <div class="header">
+        <div class="top-menu">
+            <a href="/" class="menu-logo">SQRL</a>
+
+            <ul class="menu"><li id="home-link"><a href="index.html">Home</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li id="schedules-link" style="color:#49B9EF">
+                    <a href="schedules_scores.html">Schedules & Scores</a>
+                    <ul>
+                        <li id="legendsLink">Legends</li>
+                        <li id="adultSeriousLink">Adult Serious</li>
+                        <li id="adultCasualLink">Adult Casual</li>
+                        <li id="kidsLink">Kids</li>
+                        <li id="seniorsLink">Seniors</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Rankings</a>
+                    <ul>
+                        <li><b>Legends</b></li>
+                        <li><b>Adult Serious</b></li>
+                        <li><b>Adult Casual</b></li>
+                        <li><b>Kids</b></li>
+                        <li><b>Seniors</b></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="login-text"><b>Welcome, <i>Jennifer</i></b><input type="button" value="Logout" class="logout-button"></div>
+        </div>
+    </div>
+    <div>
+        <img src="img/Quidditchpitch.jpg" class="banner-image"/>
+    </div>
+    <div class="banner" style="margin-top: -4px">
+        <div class="arrow-left"></div>
+        <div class="arrow-right"></div>
+        <div class="slide" id="slide1">
+            <ul class="banner-ul menu">
+                <li>
+                    <div>
+                        <h3>Kings vs Phoenix</h3>
+                        60 - 20<br/>
+                        Midlands
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Builders vs Spartans</h3>
+                        June 27<br/>
+                        Eastern
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Soldiers vs Politicians</h3>
+                        June 27<br/>
+                        Greater London
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Eagles vs Lions</h3>
+                        June 27<br/>
+                        Scotland
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Thunder vs Lightning</h3>
+                        July 4<br/>
+                        Southern
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="slide" id="slide2">
+            <ul class="banner-ul menu">
+                <li>
+                    <div>
+                        <h3>Kings vs Phoenix</h3>
+                        60 - 20<br/>
+                        Midlands
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Builders vs Spartans</h3>
+                        June 27<br/>
+                        Eastern
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Soldiers vs Politicians</h3>
+                        June 27<br/>
+                        Greater London
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Eagles vs Lions</h3>
+                        June 27<br/>
+                        Scotland
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Thunder vs Lightning</h3>
+                        July 4<br/>
+                        Southern
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main" style="height:1000px;">
+        <div style="margin-left: 50px;">
+            <br/>
+            <h1>Schedules and Scores</h1>
+            <br/>
+
+            <div>
+                <div style="float:left; margin-right:10px">
+                    <div class="table-level" id="legends-level"><a href="#legendsLevel"><b>Legends</b></a></div>
+                    <div class="table-level" id="adultSerious-level"><a href="#adultSeriousLevel"><b>Adult Serious</b></a></div>
+                    <div class="table-level" id="adultCasual-level"><a href="#adultCasualLevel"><b>Adult Casual</b></a></div>
+                    <div class="table-level" id="kids-level"><a href="#kidsLevel"><b>Kids</b></a></div>
+                    <div class="table-level" id="senior-level"><a href="#seniorLevel"><b>Seniors</b></a></div>
+                </div>
+            </div>
+            <div id="legendsLevel" class="tableForLevel">
+                <ul class="tabs" >
+                    <li><a href="#tab1"><b>Division A</b></a></li>
+                    <li><a href="#tab2"><b>Division B</b></a></li>
+                </ul>
+
+                <section class="block">
+                    <article id="tab1">
+                        <table class="pure-table pure-table-horizontal">
+                            <tbody>
+                                <tr>
+                                    <td>13/06</td>
+                                    <td>9:00am</td>
+                                    <td style="width:200px">Stormtroopers vs Rebels</td>
+                                    <td>130 - 140</td>
+                                    <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                                </tr>
+                                <tr>
+                                    <td>13/06</td>
+                                    <td>11:00am</td>
+                                    <td>Knights vs Kings</td>
+                                    <td>120 - 50</td>
+                                    <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                                </tr>
+                                <tr>
+                                    <td>13/06</td>
+                                    <td>1:00pm</td>
+                                    <td>Phoenix vs Peasants</td>
+                                    <td>250 - 10</td>
+                                    <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                                </tr>
+                                <tr>
+                                    <td>20/06</td>
+                                    <td>9:00am</td>
+                                    <td>Knights vs Stormtroopers</td>
+                                    <td>80 - 100</td>
+                                    <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                                </tr>
+                                <tr>
+                                    <td>20/06</td>
+                                    <td>11:00am</td>
+                                    <td>Stormtroopers vs Peasants</td>
+                                    <td>Midlands</td>
+                                    <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/><img src="img/post.PNG" width="20" class="cd-popup-trigger-post" title="Post Results button only appears if an organiser is logged in." /> </td>
+                                </tr>
+                                <tr>
+                                    <td>20/06</td>
+                                    <td>1:00pm</td>
+                                    <td>Rebels vs Kings</td>
+                                    <td>Scotland</td>
+                                    <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/><img src="img/post.PNG" width="20" class="cd-popup-trigger-post" title="Post Results button only appears if an organiser is logged in." /> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                    <article id="tab2">
+                        <table class="pure-table pure-table-horizontal">
+                            <tbody>
+                            <tr>
+                                <td>13/06</td>
+                                <td>10:00am</td>
+                                <td style="width:200px">Cats vs Dogs</td>
+                                <td>10 - 180</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>13/06</td>
+                                <td>12:30pm</td>
+                                <td>Dolphins vs Sharks</td>
+                                <td>120 - 100</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>13/06</td>
+                                <td>2:30pm</td>
+                                <td>Leopards vs Tigers</td>
+                                <td>50 - 100</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>10:00am</td>
+                                <td>Dolphins vs Dogs</td>
+                                <td>180 - 140</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>12:30pm</td>
+                                <td>Leopards vs Cats</td>
+                                <td>Eastern</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/><img src="img/post.PNG" width="20" class="cd-popup-trigger-post" title="Post Results button only appears if an organiser is logged in." /> </td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>2:30pm</td>
+                                <td>Tigers vs Sharks</td>
+                                <td>Northern</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/><img src="img/post.PNG" width="20" class="cd-popup-trigger-post" title="Post Results button only appears if an organiser is logged in." /> </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                </section>
+            </div>
+            <div id="adultSeriousLevel" class="tableForLevel">
+                <ul class="tabs" >
+                    <li><a href="#adultSerioustab1"><b>Division A</b></a></li>
+                    <li><a href="#adultSerioustab2"><b>Division B</b></a></li>
+                </ul>
+                <section class="block">
+                    <article id="adultSerioustab1">
+                        <table class="pure-table pure-table-horizontal">
+                            <tbody>
+                            <tr>
+                                <td>13/06</td>
+                                <td>9:30am</td>
+                                <td style="width:200px">Hurricanes vs Stormers</td>
+                                <td>300 - 60</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>13/06</td>
+                                <td>11:30am</td>
+                                <td>Chiefs vs Blues</td>
+                                <td>120 - 120</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>13/06</td>
+                                <td>1:30pm</td>
+                                <td>Crusaders vs Force</td>
+                                <td>200 - 10</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>9:30am</td>
+                                <td>Stormers vs Blues</td>
+                                <td>120 - 150</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>11:30am</td>
+                                <td>Force vs Chiefs</td>
+                                <td>Southern</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/><img src="img/post.PNG" width="20" class="cd-popup-trigger-post" title="Post Results button only appears if an organiser is logged in." /> </td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>1:30pm</td>
+                                <td>Crusaders vs Hurricanes</td>
+                                <td>Midlands</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/><img src="img/post.PNG" width="20" class="cd-popup-trigger-post" title="Post Results button only appears if an organiser is logged in." /> </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                    <article id="adultSerioustab2">
+                        <table class="pure-table pure-table-horizontal">
+                            <tbody>
+                            <tr>
+                                <td>13/06</td>
+                                <td>10:30am</td>
+                                <td style="width:200px">Celtics vs Hawks</td>
+                                <td>20 - 80</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>13/06</td>
+                                <td>1:00pm</td>
+                                <td>Pelicans vs Wizards</td>
+                                <td>120 - 100</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>13/06</td>
+                                <td>3:00pm</td>
+                                <td>Thunder vs Lakers</td>
+                                <td>20 - 130</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>10:30am</td>
+                                <td>Lakers vs Wizards</td>
+                                <td>120 - 80</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>1:00pm</td>
+                                <td>Thunder vs Hawks</td>
+                                <td>Scotland</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/><img src="img/post.PNG" width="20" class="cd-popup-trigger-post" title="Post Results button only appears if an organiser is logged in." /> </td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>2:30pm</td>
+                                <td>Celtics vs Pelicans</td>
+                                <td>Wales</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/><img src="img/post.PNG" width="20" class="cd-popup-trigger-post" title="Post Results button only appears if an organiser is logged in." /> </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                </section>
+            </div>
+            <div id="adultCasualLevel" class="tableForLevel">
+                <ul class="tabs" >
+                    <li><a href="#adultCasualtab1"><b>Division A</b></a></li>
+                    <li><a href="#adultCasualtab2"><b>Division B</b></a></li>
+                    <li><a href="#adultCasualtab3"><b>Division C</b></a></li>
+                </ul>
+
+                <section class="block">
+                    <article id="adultCasualtab1">
+                        <table class="pure-table pure-table-horizontal">
+                            <tbody>
+                            <tr>
+                                <td>13/06</td>
+                                <td>1:30pm</td>
+                                <td style="width:200px">Knights vs Bishops</td>
+                                <td>290 - 20</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>13/06</td>
+                                <td>5:00pm</td>
+                                <td>Castles vs Pawns</td>
+                                <td>110 - 20</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>13/06</td>
+                                <td>7:30pm</td>
+                                <td>Queens vs Kings</td>
+                                <td>410 - 230</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>1:30pm</td>
+                                <td>Kings vs Pawns</td>
+                                <td>230 - 50</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>5:00pm</td>
+                                <td>Queens vs Bishops</td>
+                                <td>Northern</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/><img src="img/post.PNG" width="20" class="cd-popup-trigger-post" title="Post Results button only appears if an organiser is logged in." /> </td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>7:30pm</td>
+                                <td>Knights vs Castles</td>
+                                <td>Wales</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/><img src="img/post.PNG" width="20" class="cd-popup-trigger-post" title="Post Results button only appears if an organiser is logged in." /> </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                    <article id="adultCasualtab2">
+                        <table class="pure-table pure-table-horizontal">
+                            <tbody>
+                            <tr>
+                                <td>13/06</td>
+                                <td>11:00am</td>
+                                <td style="width:200px">Elephants vs Anteaters</td>
+                                <td>120 - 30</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>13/06</td>
+                                <td>5:00pm</td>
+                                <td>Blaze vs Crocodiles</td>
+                                <td>310 - 200</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>13/06</td>
+                                <td>7:30pm</td>
+                                <td>Sparrows vs Eagles</td>
+                                <td>90 - 150</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>11:00am</td>
+                                <td>Eagles vs Elephants</td>
+                                <td>150 - 60</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>5:00pm</td>
+                                <td>Blaze vs Crocodiles</td>
+                                <td>Midlands</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/><img src="img/post.PNG" width="20" class="cd-popup-trigger-post" title="Post Results button only appears if an organiser is logged in." /> </td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>7:30pm</td>
+                                <td>Anteaters vs Sparrows</td>
+                                <td>Scotland</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/><img src="img/post.PNG" width="20" class="cd-popup-trigger-post" title="Post Results button only appears if an organiser is logged in." /> </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                    <article id="adultCasualtab3">
+                        <table class="pure-table pure-table-horizontal">
+                            <tbody>
+                            <tr>
+                                <td>13/06</td>
+                                <td>11:30am</td>
+                                <td style="width:200px">Ferrari vs Ford</td>
+                                <td>30 - 40</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>13/06</td>
+                                <td>5:30pm</td>
+                                <td>Toyota vs Honda</td>
+                                <td>170 - 170</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>13/06</td>
+                                <td>7:30pm</td>
+                                <td>Suzuki vs Porche</td>
+                                <td>260 - 130</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>11:30am</td>
+                                <td>Honda vs Ferrari</td>
+                                <td>70 - 90</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>5:30pm</td>
+                                <td>Porche vs Toyota</td>
+                                <td>Eastern</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/><img src="img/post.PNG" width="20" class="cd-popup-trigger-post" title="Post Results button only appears if an organiser is logged in." /> </td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>7:30pm</td>
+                                <td>Ford vs Suzuki</td>
+                                <td>Midlands</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/><img src="img/post.PNG" width="20" class="cd-popup-trigger-post" title="Post Results button only appears if an organiser is logged in." /> </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                </section>
+            </div>
+            <div id="kidsLevel" class="tableForLevel">
+                <ul class="tabs" >
+                    <li><a href="#kidstab1"><b>Division A</b></a></li>
+                    <li><a href="#kidstab2"><b>Division B</b></a></li>
+                </ul>
+
+                <section class="block">
+                    <article id="kidstab1">
+                        <table class="pure-table pure-table-horizontal">
+                            <tbody>
+                            <tr>
+                                <td>13/06</td>
+                                <td>9:30am</td>
+                                <td style="width:200px">Dinosaurs vs Aliens</td>
+                                <td>20 - 30</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>13/06</td>
+                                <td>11:30am</td>
+                                <td>Spaceships vs Dragons</td>
+                                <td>90 - 180</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>13/06</td>
+                                <td>1:30pm</td>
+                                <td>Pokemon vs Digimon</td>
+                                <td>120 - 130</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>9:30am</td>
+                                <td>Dragons vs Dinosaurs</td>
+                                <td>80 - 50</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>11:30am</td>
+                                <td>Digimon vs Spaceships</td>
+                                <td>Eastern</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/><img src="img/post.PNG" width="20" class="cd-popup-trigger-post" title="Post Results button only appears if an organiser is logged in." /> </td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>1:30pm</td>
+                                <td>Pokemon vs Aliens</td>
+                                <td>Northern</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/><img src="img/post.PNG" width="20" class="cd-popup-trigger-post" title="Post Results button only appears if an organiser is logged in." /> </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                    <article id="kidstab2">
+                        <table class="pure-table pure-table-horizontal">
+                            <tbody>
+                            <tr>
+                                <td>13/06</td>
+                                <td>10:30am</td>
+                                <td style="width:200px">Magic vs Mystics</td>
+                                <td>490 - 480</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>13/06</td>
+                                <td>1:00pm</td>
+                                <td>Steel vs Tactics</td>
+                                <td>150 - 160</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>13/06</td>
+                                <td>3:00pm</td>
+                                <td>Firebirds vs Thunderbirds</td>
+                                <td>60 - 210</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>10:30am</td>
+                                <td>Tactics vs Firebirds</td>
+                                <td>160 - 90</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>1:00pm</td>
+                                <td>Thunderbirds vs Magic</td>
+                                <td>Southern</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/><img src="img/post.PNG" width="20" class="cd-popup-trigger-post" title="Post Results button only appears if an organiser is logged in." /> </td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>2:30pm</td>
+                                <td>Mystics vs Steel</td>
+                                <td>Scotland</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/><img src="img/post.PNG" width="20" class="cd-popup-trigger-post" title="Post Results button only appears if an organiser is logged in." /> </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                </section>
+            </div>
+            <div id="seniorLevel" class="tableForLevel">
+                <ul class="tabs" >
+                    <li><a href="#seniortab1"><b>Division A</b></a></li>
+                </ul>
+
+                <section class="block">
+                    <article id="seniortab1">
+                        <table class="pure-table pure-table-horizontal">
+                            <tbody>
+                            <tr>
+                                <td>13/06</td>
+                                <td>11:30am</td>
+                                <td style="width:200px">Gold vs Bronze</td>
+                                <td>80 - 210</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>13/06</td>
+                                <td>1:00pm</td>
+                                <td>Silver vs Brown</td>
+                                <td>800 - 150</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>13/06</td>
+                                <td>4:30pm</td>
+                                <td>Green vs Blue</td>
+                                <td>240 - 250</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>11:30am</td>
+                                <td>Green vs Brown</td>
+                                <td>120 - 60</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/></td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>1:00pm</td>
+                                <td>Silver vs Gold</td>
+                                <td>Midlands</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/><img src="img/post.PNG" width="20" class="cd-popup-trigger-post" title="Post Results button only appears if an organiser is logged in." /> </td>
+                            </tr>
+                            <tr>
+                                <td>20/06</td>
+                                <td>4:30pm</td>
+                                <td>Brown vs Blue</td>
+                                <td>Northern</td>
+                                <td><img src="img/edit.jpg" width="20" class="cd-popup-trigger-edit" title="Edit button only appears if an organiser is logged in."/><img src="img/post.PNG" width="20" class="cd-popup-trigger-post" title="Post Results button only appears if an organiser is logged in." /> </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Here's the editing schedule pop up -->
+    <div class="cd-popup-edit form-style-3" role="alert">
+        <div class="cd-popup-container">
+            <form>
+                <fieldset><legend><h2 style="margin: 15px">Edit Schedule</h2></legend>
+                    <h2>Editing schedule and results functionality would go here.</h2>
+                    <br/>
+                    <a href="#0" class="close-X" style="margin-left: 390px; margin-top: -120px"><b class="cd-popup-close">X</b></a>
+                    <a href="#0" style="text-decoration: none; color: #FF9931"><b class="cd-popup-close img-replace" >Close</b></a>
+                </fieldset>
+            </form>
+        </div> <!-- cd-popup-container -->
+    </div> <!-- cd-popup -->
+
+    <!-- Here's the posting results pop up -->
+    <div class="cd-popup-post form-style-3" role="alert">
+        <div class="cd-popup-container">
+            <form>
+                <fieldset><legend><h2 style="margin: 15px">Post Results</h2></legend>
+                    <p id="gameInfo">01/01 9am, London<br/></p>
+                    <label style="float: right"><span style="color:blue">Defaulted:</span><input type="radio" name="default" class="defaultCheckBox" id="defaultTeam1"></label>
+                    <label for="team1ScoreValue"><span id="team1Score">Team 1 <span class="required">*</span></span><input type="text" tabindex="1" pattern="\d*|def" class="input-field" id="team1ScoreValue" required /></label>
+                    <label style="float: right"><span style="color:blue">Defaulted:</span><input type="radio" name="default" class="defaultCheckBox" id="defaultTeam2"></label>
+                    <label for="team2ScoreValue"><span id="team2Score">Team 2 <span class="required">*</span></span><input type="text" tabindex="2" pattern="\d*|def"  class="input-field" id="team2ScoreValue" required /></label>
+                    <a href="#0" class="close-X"><b class="cd-popup-close">X</b></a>
+                    <label><input type="button" tabindex="3" value="Submit" id="submitButton" /></label>
+                    <input style="display: none" type="submit" id="hiddenSubmitButton" />
+                </fieldset>
+            </form>
+        </div>
+    </div> <!-- cd-popup -->
+
+    <!-- FOOTER -->
+    <div style="background: #1e1f00">
+        <div id="container">
+            <h1 style="color: #FF9931; border-bottom: none; margin-top: 100px">SQRL</h1>
+            <div class="left">
+                <h3>Navigation</h3>
+                Documentation<br/>
+                Schedules & Scores<br/>
+                Rankings<br/>
+                About<br/>
+                Usability Video<br/>
+            </div>
+
+            <div class="right">
+                <h3>About</h3>
+                SQRL Limited<br/>
+                120a Gloucester Street<br/>
+                London<br/>
+                021 123 456<br/>
+                quidditch@sqrl.co.uk
+            </div>
+
+        </div>
+        <div class="clear"></div>
+        <div id="footer"><p>Copyright 2015, SQRL Limited</p></div>
+    </div>
+
+    <script>
+
+        $(document).ready(function() {
+            $(window).keydown(function(event){
+                if(event.keyCode == 13) {
+                    event.preventDefault();
+                    return false;
+                }
+            });
+        });
+
+        var row;
+
+        $("#submitButton").on("click", function(event) {
+            event.preventDefault();
+
+            var score1 = document.getElementById("team1ScoreValue").value;
+            var score2 = document.getElementById("team2ScoreValue").value;
+
+            if (score1 != "" && score2 != "" && ((Math.floor(score1) == score1 && score1 >= 0) || score1 == "def")
+                    && ((Math.floor(score2) == score2 && score2 >= 0) || score2 == "def")) {
+                row[3].innerHTML = score1 + " - " + score2;
+                document.getElementById("team1ScoreValue").value = "";
+                document.getElementById("team2ScoreValue").value = "";
+                document.getElementsByName("default")[0].checked = false;
+                document.getElementsByName("default")[1].checked = false;
+                $(this).parent().parent().parent().parent().parent().removeClass('is-visible');
+                row[4].getElementsByTagName("img")[1].style.display = "none"
+            } else {
+                document.getElementById('hiddenSubmitButton').click();
+            }
+        }).keyup(function(event){
+            if(event.keyCode == 13){
+                $("#submitButton").click();
+            }
+        });
+
+        $("#team1ScoreValue").keyup(function(event){
+            if(event.keyCode == 13){
+                $("#team2ScoreValue").focus();
+            }
+        });
+        $("#team2ScoreValue").keyup(function(event){
+            if(event.keyCode == 13){
+                $("#submitButton").click();
+            }
+        });
+
+        jQuery(document).ready(function($){
+            var team1ScoreField = $("#team1ScoreValue")[0];
+            team1ScoreField.oninvalid = function(e) {
+                e.target.setCustomValidity("");
+                if (!e.target.validity.valid) {
+                    if (e.target.value.length == 0) {
+                        e.target.setCustomValidity("Please enter a score for the first team");
+                    } else {
+                        e.target.setCustomValidity("Please enter a valid score for the first team");
+                    }
+                }
+                e.target.style.border = "1px solid red"
+            };
+            team1ScoreField.onblur = function (e) {
+                e.target.style.border = "1px solid green"
+            }
+            var team2ScoreField = $("#team2ScoreValue")[0];
+            team2ScoreField.oninvalid = function(e) {
+                e.target.setCustomValidity("");
+                if (!e.target.validity.valid) {
+                    if (e.target.value.length == 0) {
+                        e.target.setCustomValidity("Please enter a score for the second team");
+                    } else {
+                        e.target.setCustomValidity("Please enter a valid score for the second team");
+                    }
+                }
+                e.target.style.border = "1px solid red"
+            };
+            team2ScoreField.onblur = function (e) {
+                e.target.style.border = "1px solid green"
+            }
+
+            $('#defaultTeam1').on('click', function(event){
+                if( $(event.target).is(':checked')) {
+                    $('#team1ScoreValue').val("def")
+                    $('#team2ScoreValue').val("100")
+                } else {
+                    $('#team1ScoreValue').val(0)
+                    $('#team2ScoreValue').val(0)
+                }
+            });
+
+            $('#defaultTeam2').on('click', function(event){
+                if( $(event.target).is(':checked')) {
+                    $('#team1ScoreValue').val(100)
+                    $('#team2ScoreValue').val("def")
+                } else {
+                    $('#team1ScoreValue').val(0)
+                    $('#team2ScoreValue').val(0)
+                }
+            });
+
+            $(".logout-button").on("click", function(event) {
+                $(".cd-popup-trigger-edit").hide();
+                $(".cd-popup-trigger-post").hide();
+                $(".login-text").text("Login not implemented - please refresh");
+            });
+
+            //open popup
+            $('.cd-popup-trigger-edit').on('click', function(event){
+                event.preventDefault();
+                $('.cd-popup-edit').addClass('is-visible');
+            });
+
+            //close popup
+            $('.cd-popup-edit').on('click', function(event){
+                if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+                    event.preventDefault();
+                    $(this).removeClass('is-visible');
+                }
+            });
+            //close popup when clicking the esc keyboard button
+            $(document).keyup(function(event){
+                if(event.which=='27'){
+                    document.getElementById("team1ScoreValue").value = "";
+                    document.getElementById("team2ScoreValue").value = "";
+                    document.getElementsByName("default")[0].checked = false;
+                    document.getElementsByName("default")[1].checked = false;
+                    $('.cd-popup-edit').removeClass('is-visible');
+                    $('.cd-popup-post').removeClass('is-visible');
+                }
+            });
+
+            //open popup
+            $('.cd-popup-trigger-post').on('click', function(event){
+                event.preventDefault();
+                $('.cd-popup-post').addClass('is-visible');
+                row = $(this).parent().parent()[0].cells;
+                document.getElementById("team1Score").innerHTML = row[2].innerHTML.split(" vs ")[0];
+                document.getElementById("team2Score").innerHTML = row[2].innerHTML.split(" vs ")[1];
+                document.getElementById("gameInfo").innerHTML = row[0].innerHTML + " " + row[1].innerHTML + ", " + row[3].innerHTML;
+                $("#team1ScoreValue").focus();
+            });
+
+            //close popup
+            $('.cd-popup-post').on('click', function(event){
+                if( $(event.target).is('.cd-popup-close') || $(event.target).is('.cd-popup') ) {
+                    event.preventDefault();
+                    document.getElementById("team1ScoreValue").value = "";
+                    document.getElementById("team2ScoreValue").value = "";
+                    document.getElementsByName("default")[0].checked = false;
+                    document.getElementsByName("default")[1].checked = false;
+                    $(this).removeClass('is-visible');
+                }
+            });
+        });
+
+        $(function(){
+            var level = location.search.split('level=')[1];
+            if (level == null || level == "") {
+                level = "legends";
+            }
+
+            $('#' + level +"Level " + 'ul.tabs li:first').attr("id","current");
+            $('.block article').hide();
+            $('.block article:first').fadeIn();
+            $('ul.tabs li').on('click',function(){
+                $('ul.tabs li').removeClass('active').attr("id","");
+                $(this).addClass('active');
+                $('.block article').hide();
+                var activeTab = $(this).find('a').attr('href');
+                $(activeTab).fadeIn();
+                return false;
+            });
+
+            $('.block article').hide();
+            $('#' + level + '-level').addClass('active');
+            $('.tableForLevel').hide();
+            $('#' + level + 'Level').show();
+            $('#' + level + 'Level .block article:first').show();
+
+            $('.table-level').on('click',function(){
+                if ($(this).hasClass('active')){
+                    return false;
+                }
+                $('.block article').hide();
+                $('ul.tabs li').removeClass('active');
+                $('.table-level').removeClass('active');
+                $(this).addClass('active');
+                $('.tableForLevel').hide();
+                var activeTab = $(this).find('a').attr('href');
+                $(activeTab).show();
+
+                $(activeTab + ' ul.tabs li:first').addClass('active').attr("id","current");;
+                $(activeTab + ' .block article:first').fadeIn();
+
+                return false;
+            });
+        })
+
+        jQuery(document).ready(function($){
+            $("#legendsLink").click(function (event) {
+                window.location.href = "schedules_scores.html?level=legends";
+            });
+            $("#adultSeriousLink").click(function (event) {
+                window.location.href = "schedules_scores.html?level=adultSerious";
+            });
+            $("#adultCasualLink").click(function (event) {
+                window.location.href = "schedules_scores.html?level=adultCasual";
+            });
+            $("#seniorsLink").click(function (event) {
+                window.location.href = "schedules_scores.html?level=senior";
+            });
+            $("#kidsLink").click(function (event) {
+                window.location.href = "schedules_scores.html?level=kids";
+            });
+        });
+
+        //allow slider to move
+        $('.arrow-left').click(function() {
+            $(".slide").first().animate({
+                left: '-50%'
+            }, 500, function() {
+                $(this).css('left', '100%');
+                $(this).appendTo('.banner');
+            }).next().animate({
+                left: '23%'
+            }, 500);
+        });
+        $('.arrow-right').click(function() {
+            $(".slide").next()[0].style.left = "-50%";
+            $(".slide").first().animate({
+                left: '100%'
+            }, 500, function() {
+                $(this).css('left', '100%');
+                $(this).appendTo('.banner');
+            }).next().animate({
+                left: '23%'
+            }, 500);
+        });
+    </script>
+    <script type="text/javascript">
+        //this script allows unselection of the radio button for defaulting
+        var allRadios = document.getElementsByName('default');
+        var radio;
+        var x = 0;
+        for(x = 0; x < allRadios.length; x++){
+            allRadios[x].onclick = function() {
+                if(radio == this){
+                    this.checked = false;
+                    radio = null;
+                }else{
+                    radio = this;
+                }
+            };
+        }
+    </script>
+</body>
+</html>
