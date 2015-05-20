@@ -1,0 +1,199 @@
+.table-level {
+    background-image: linear-gradient(to bottom, #49B9EF, #2797CD);
+    padding: 25px 25px 20px 10px;
+    margin-bottom: 2px;
+    border-radius: 10px;
+    border: 2px solid #666;
+    -moz-box-shadow: 0 0 10px #999;
+    -webkit-box-shadow: 0 0 10px #999;
+    box-shadow: 0 0 10px #999;
+}
+
+.table-level:active {
+    position:relative;
+    top:2px;
+}
+
+.table-level:hover, .table-level.active {
+    background-image: linear-gradient(to bottom, #FFBA56, #FF9931);
+    cursor:pointer;
+}
+.table-level a {
+    text-decoration: none;
+    color: white;
+}
+
+ul.tabs {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.tabs li {
+    float: left;
+    margin: 0 .5em 0 0;
+}
+
+ul.tabs a {
+    position: relative;
+    background-image: linear-gradient(to bottom, #ddd, #aaa);
+    padding: .7em 3.5em;
+    float: left;
+    text-decoration: none;
+    color: #444;
+    text-shadow: 0 1px 0 rgba(255,255,255,.8);
+    border-radius: 5px 0 0 0;
+    box-shadow: 0 2px 2px rgba(0,0,0,.4);
+}
+
+ul.tabs a:hover,
+ul.tabs a:hover::after,
+ul.tabs a:focus,
+ul.tabs a:focus::after, .tabs .active a, .tabs .active a:after {
+    background-image: linear-gradient(to bottom, #ccc, #f5f5f5);
+}
+
+ul.tabs a:focus {
+    outline: 0;
+}
+
+ul.tabs a::after {
+    content:'';
+    position:absolute;
+    z-index: 1;
+    top: 0;
+    right: -.5em;
+    bottom: 0;
+    width: 1em;
+    background: #ddd;
+    background-image: linear-gradient(to bottom, #ddd, #aaa);
+    box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+    transform: skew(10deg);
+    border-radius: 0 5px 0 0;
+}
+
+ul.tabs #current a,
+ul.tabs #current a::after {
+    background-image: linear-gradient(to bottom, #ccc, #f5f5f5);
+    z-index: 3;
+}
+
+
+article {
+    padding: 0 1em;
+    margin-top: 10px;
+}
+
+.tableForLevel {
+    display: inline-block;
+}
+
+/*
+    Taken from http://purecss.io/tables/
+*/
+.pure-table{
+    border-collapse:collapse;
+    border-spacing:0;
+    empty-cells:show;
+    border:1px solid #cbcbcb
+}
+
+.pure-table td,.pure-table th{
+    border-left:1px solid #cbcbcb;
+    border-width:0 0 0 1px;
+    font-size:inherit;
+    margin:0;
+    overflow:visible;
+    padding:.5em 1em;
+    width: 100px;
+    height: 35px;
+}
+
+.pure-table td:first-child,.pure-table th:first-child{
+    border-left-width:0
+}
+
+.pure-table thead{
+    background-color:#e0e0e0;
+    color:#000;
+    text-align:left;
+    vertical-align:bottom
+}
+
+.pure-table td{
+    background-color:transparent
+}
+
+.pure-table-horizontal td,.pure-table-horizontal th{
+    border-width:0 0 1px;
+    border-bottom:1px solid #cbcbcb
+}
+
+.pure-table-horizontal tbody>tr:last-child>td{
+    border-bottom-width:0
+}
+
+tbody tr:nth-child(2n-1) {
+    background-color: #f5f5f5;
+    transition: all .125s ease-in-out;
+}
+
+tbody tr:hover {
+    background-color: rgba(179,218,237,.3);
+}
+
+/* The following is from http://codyhouse.co/gem/simple-confirmation-popup/
+*/
+.cd-popup-post, .cd-popup-edit {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(50, 50, 50, 0.7);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+}
+
+.cd-popup-edit.is-visible, .cd-popup-post.is-visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+
+.cd-popup-container {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    background: transparent;
+    border-radius: .25em .25em .4em .4em;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-40px);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    -webkit-backface-visibility: hidden;
+    top:50%;
+    left:50%;
+    margin:-100px 0 0 -400px;
+}
+
+.is-visible .cd-popup-container {
+    transform: translateY(0);
+}
+
+.block {
+    margin-left: -14px;
+    margin-top: -11px;
+    z-index: -1;
+}
+
+.cd-popup-trigger-edit:hover {
+    cursor:pointer;
+}
+.cd-popup-trigger-post:hover {
+    cursor:pointer;
+}

@@ -1,0 +1,13 @@
+http://bloggingexperiment.com/wp-content/uploads/am/contents/2009/10/Screen-shot-2009-10-20-at-6.07.16-PM.png
+http://paletton.com/#uid=30-0u0koJXC1H+V91Z5UiMKHGpA - colours
+http://paletton.com/#uid=23s080knkIU3fZZ8hUVFVt5A3jM - colours 2
+http://cssdeck.com/labs/another-simple-css3-dropdown-menu - menu
+http://purecss.io/tables/ - tables
+http://codyhouse.co/gem/simple-confirmation-popup/ - popup
+http://www.sanwebe.com/2014/08/css-html-forms-designs - form for post results
+http://www.free-css.com/assets/files/free-css-templates/preview/page19/solemnity/ - sidebar
+http://stackoverflow.com/questions/17120576/how-to-uncheck-checked-radio-button - uncheck radio (although it is not expected functionality, it does no harm in this scenario)
+
+These sans serifs are constructed of straight, monolinear lines and circular or square shapes. 
+Mimics the circular pitch and straight goal posts of quidditch, but also quite simple.
+The starkness of most geometric sans serifs makes for great headings, but they are usually less than ideal for long paragraphs.

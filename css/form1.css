@@ -1,0 +1,93 @@
+.form-style-3 {
+    font-family: 'Droid Sans', Helvetica, Verdana, Arial, sans-serif;
+}
+.form-style-3 label{
+    display:block;
+    margin-bottom: 10px;
+}
+.form-style-3 label > span{
+    float: left;
+    width: 100px;
+    color: blue;
+    font-weight: bold;
+    font-size: 13px;
+    text-shadow: 1px 1px 1px #fff;
+    text-align: right;
+}
+.form-style-3 fieldset{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin: 0px 0px 10px 0px;
+    border: 1px solid #bbffff;
+    padding: 20px;
+    background: #ddffff;
+    box-shadow: inset 0px 0px 15px #bbffff;
+    -moz-box-shadow: inset 0px 0px 15px #bbffff;
+    -webkit-box-shadow: inset 0px 0px 15px #bbffff;
+}
+.form-style-3 fieldset legend{
+    color: green;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+    -moz-border-radius: 5px 5px 0px 0px;
+    background: #ddffff;
+    padding: 0px 8px 3px 8px;
+    box-shadow: -0px -1px 2px #F1F1F1;
+    -moz-box-shadow:-0px -1px 2px #F1F1F1;
+    -webkit-box-shadow:-0px -1px 2px #F1F1F1;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.form-style-3 input[type=text],
+.form-style-3 input[type=date],
+.form-style-3 input[type=datetime],
+.form-style-3 input[type=number],
+.form-style-3 input[type=search],
+.form-style-3 input[type=time],
+.form-style-3 input[type=url],
+.form-style-3 input[type=email],
+.form-style-3 select,
+.form-style-3 textarea{
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border: 1px solid green;
+    outline: none;
+    color: blue;
+    padding: 5px 8px 5px 8px;
+    box-shadow: inset 1px 1px 4px #B4FBC9;
+    -moz-box-shadow: inset 1px 1px 4px #B4FBC9;
+    -webkit-box-shadow: inset 1px 1px 4px #B4FBC9;
+    background: #e5FFeF;
+    width:50%;
+}
+.form-style-3  input[type=submit],
+.form-style-3  input[type=button]{
+    background: #FF9931;
+    border: 1px solid #C94A81;
+    padding: 5px 15px 5px 15px;
+    color: #ffffff;
+    box-shadow: inset -1px -1px 3px #FF9931;
+    -moz-box-shadow: inset -1px -1px 3px #FF9931;
+    -webkit-box-shadow: inset -1px -1px 3px #FF9931;
+    border-radius: 3px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    font-weight: bold;
+}
+
+.close-X {
+    position: absolute;
+    margin-left: 420px;
+    margin-top: -140px;
+    text-decoration: none;
+    color: #FF9931;
+    font-size: 18px;
+}
+
+#gameInfo {
+    margin-top: -10px;
+}
