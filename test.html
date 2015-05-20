@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="users">
+    <script src="js/list.js"></script>
+
+    <input class="search" placeholder="Search" />
+    <button class="sort" data-sort="date">
+        Sort by date
+    </button>
+    <div><div><div>
+    <section class="block">
+        <article id="tab1">
+            <div>
+            <table class="pure-table pure-table-horizontal">
+                <!-- IMPORTANT, class="list" have to be at tbody -->
+                <tbody class="list">
+                <tr>
+                    <td class="game">Jonny Stromberg</td>
+                    <td class="date">1986</td>
+                </tr>
+                <tr>
+                    <td class="game">Jonas Arnklint</td>
+                    <td class="date">1985</td>
+                </tr>
+                <tr>
+                    <td class="game">Martina Elm</td>
+                    <td class="date">1986</td>
+                </tr>
+                <tr>
+                    <td class="game">Gustaf Lindqvist</td>
+                    <td class="date">1983</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+            </article>
+        </section>
+    </div></div></div>
+</div>
+<script>
+    var options = {
+        valueNames: [ 'game', 'date' ]
+    };
+
+    var userList = new List('users', options);
+</script>
+</body>
+</html>

@@ -164,6 +164,13 @@ ul.menu li:hover ul {
     font-size: 12px;
 }
 
+.dropshadowclass {
+    border: solid 2px #CCC;
+    -moz-box-shadow: 4px 4px 10px #999;
+    -webkit-box-shadow: 4px 4px 10px #999;
+    box-shadow: 4px 4px 10px #999;
+}
+
 .readmore {
     -moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
     -webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
