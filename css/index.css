@@ -134,6 +134,7 @@ ul.menu li:hover ul {
     right: 25%;
     position: absolute;
     width: 551px;
+	color: #ccc;
 }
 
 .login-text {
@@ -346,7 +347,7 @@ ul.menu li:hover ul {
     text-align: left;
     float:left;
     margin-left: 0;
-    padding-left: 35%;
+    padding-left: 38%;
     width:20%;
     background:#1e1f00;
     color:white;
@@ -355,7 +356,7 @@ ul.menu li:hover ul {
 .right {
     text-align: left;
     float:left;
-    width:45%;
+    width:25%;
     clear:right;
     background:#1e1f00;
     color:white;
