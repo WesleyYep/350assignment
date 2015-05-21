@@ -21,7 +21,7 @@
             <ul class="menu"><li id="home-link"><a href="index.html">Home</a></li>
                 <li><a href="#">Documentation</a></li>
                 <li id="schedules-link" style="color:#49B9EF">
-                    <a href="schedules_scores.html">Schedules & Scores</a>
+                    <a href="schedules_scores.html">Schedules & Scores <strong style="font-size: 10px">&#x25BC</strong></a>
                     <ul>
                         <li id="legendsLink">Legends</li>
                         <li id="adultSeriousLink">Adult Serious</li>
@@ -31,7 +31,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Rankings</a>
+                    <a href="#">Rankings <strong style="font-size: 10px">&#x25BC</strong></a>
                     <ul>
                         <li><b>Legends</b></li>
                         <li><b>Adult Serious</b></li>
@@ -771,7 +771,7 @@
         <div class="cd-popup-container">
             <form>
                 <fieldset><legend><h2 style="margin: 15px">Edit Schedule</h2></legend>
-                    <h2>Editing schedule and results functionality would go here.</h2>
+                    <h2>Functionality for editing schedule and editing results  would go here.</h2>
                     <br/>
                     <a href="#0" class="close-X" style="margin-left: 390px; margin-top: -120px"><b class="cd-popup-close">X</b></a>
                     <a href="#0" style="text-decoration: none; color: #FF9931"><b class="cd-popup-close img-replace" >Close</b></a>
@@ -786,9 +786,9 @@
             <form>
                 <fieldset><legend><h2 style="margin: 15px">Post Results</h2></legend>
                     <p id="gameInfo">01/01 9am, London<br/></p>
-                    <label style="float: right"><span style="color:blue">Defaulted:</span><input type="radio" name="default" class="defaultCheckBox" id="defaultTeam1"></label>
+                    <label style="float: right"><span style="color:blue;font-size: 12px">Team defaulted?</span><input type="checkbox" name="default" class="defaultCheckBox" id="defaultTeam1"></label>
                     <label for="team1ScoreValue"><span id="team1Score">Team 1 <span class="required">*</span></span><input type="text" tabindex="1" pattern="\d*|def" placeholder="Enter Score" class="input-field" id="team1ScoreValue" required /></label>
-                    <label style="float: right"><span style="color:blue">Defaulted:</span><input type="radio" name="default" class="defaultCheckBox" id="defaultTeam2"></label>
+                    <label style="float: right"><span style="color:blue;font-size: 12px">Team defaulted?</span><input type="checkbox" name="default" class="defaultCheckBox" id="defaultTeam2"></label>
                     <label for="team2ScoreValue"><span id="team2Score">Team 2 <span class="required">*</span></span><input type="text" tabindex="2" pattern="\d*|def" placeholder="Enter Score" class="input-field" id="team2ScoreValue" required /></label>
                     <a href="#0" class="close-X"><b class="cd-popup-close">X</b></a>
                     <label><input type="button" tabindex="3" value="Submit" id="submitButton" /></label>
@@ -837,6 +837,7 @@
         });
 
         var row;
+        var val = 1;
 
         $("#submitButton").on("click", function(event) {
             event.preventDefault();
@@ -853,6 +854,13 @@
                 document.getElementsByName("default")[1].checked = false;
                 $(this).parent().parent().parent().parent().parent().removeClass('is-visible');
                 row[5].getElementsByTagName("img")[0].style.display = "none"
+                row[3].style.background = "rgba(173,216,230,100)";
+                for (var i = 1; i > 0; i -= 0.01) {
+                    var time = 1000 * (1-i) * 3;
+                    setTimeout(function () {
+                        fadeOut(row[3]);
+                    }, time);
+                }
             } else {
                 document.getElementById('hiddenSubmitButton').click();
             }
@@ -872,6 +880,17 @@
                 $("#submitButton").click();
             }
         });
+
+        function fadeOut(el) {
+            //for (var i = 1; i > 0; i-=0.00001) {
+            val -= 0.01;
+            if (val > 0) {
+                el.style.background = "rgba(173,216,230," + val + ")";
+            } else {
+                val = 1;
+            }
+            //}
+        }
 
         jQuery(document).ready(function($){
             var team1ScoreField = $("#team1ScoreValue")[0];
@@ -1085,20 +1104,23 @@
         var userList = new List('legendsLevel', options);
     </script>
     <script type="text/javascript">
-        //this script allows unselection of the radio button for defaulting
-        var allRadios = document.getElementsByName('default');
-        var radio;
-        var x = 0;
-        for(x = 0; x < allRadios.length; x++){
-            allRadios[x].onclick = function() {
-                if(radio == this){
-                    this.checked = false;
-                    radio = null;
-                }else{
-                    radio = this;
-                }
-            };
-        }
+        // the selector will match all input controls of type :checkbox
+        // and attach a click event handler
+        $("input:checkbox").on('click', function() {
+            // in the handler, 'this' refers to the box clicked on
+            var $box = $(this);
+            if ($box.is(":checked")) {
+                // the name of the box is retrieved using the .attr() method
+                // as it is assumed and expected to be immutable
+                var group = "input:checkbox[name='" + $box.attr("name") + "']";
+                // the checked state of the group/box on the other hand will change
+                // and the current value is retrieved using .prop() method
+                $(group).prop("checked", false);
+                $box.prop("checked", true);
+            } else {
+                $box.prop("checked", false);
+            }
+        });
     </script>
 </body>
 </html>

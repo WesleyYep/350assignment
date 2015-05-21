@@ -6,7 +6,7 @@ http://purecss.io/tables/ - tables
 http://codyhouse.co/gem/simple-confirmation-popup/ - popup
 http://www.sanwebe.com/2014/08/css-html-forms-designs - form for post results
 http://www.free-css.com/assets/files/free-css-templates/preview/page19/solemnity/ - sidebar
-http://stackoverflow.com/questions/17120576/how-to-uncheck-checked-radio-button - uncheck radio (although it is not expected functionality, it does no harm in this scenario)
+http://stackoverflow.com/questions/9709209/html-select-only-one-checkbox-in-a-group - single checkbox only
 http://www.listjs.com/ - table filter and sort
 
 These sans serifs are constructed of straight, monolinear lines and circular or square shapes. 

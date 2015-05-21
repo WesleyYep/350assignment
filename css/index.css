@@ -292,6 +292,10 @@ ul.menu li:hover ul {
     margin-top: 30px;
 }
 
+.arrow-right:hover {
+    cursor:pointer;
+}
+
 .arrow-left {
     width: 0;
     height: 0;
@@ -300,6 +304,36 @@ ul.menu li:hover ul {
     border-right:30px solid #3e9cca;
     float: left;
     margin-top: 30px;
+}
+
+.arrow-left:hover {
+    cursor:pointer;
+}
+
+.notification {
+    color: #31708f;
+    background-color: #d9edf7;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-right: 13px;
+}
+
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
 }
 
 .main {

@@ -15,7 +15,7 @@
             <ul class="menu"><li id="home-link" style="color:#49B9EF"><a href="index.html">Home</a></li>
                 <li><a href="#">Documentation</a></li>
                 <li id="schedules-link">
-                    <a href="schedules_scores.html">Schedules & Scores</a>
+                    <a href="schedules_scores.html">Schedules & Scores <strong style="font-size: 10px">&#x25BC</strong></a>
                     <ul>
                         <li id="legendsLink">Legends</li>
                         <li id="adultSeriousLink">Adult Serious</li>
@@ -25,7 +25,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Rankings</a>
+                    <a href="#">Rankings <strong style="font-size: 10px">&#x25BC</strong></a>
                     <ul>
                         <li>Legends</li>
                         <li>Adult Serious</li>
@@ -142,6 +142,11 @@
         <div style="float:left; margin-left: 50px; text-align: left; width: 60%">
             <br/>
             <h1>Welcome to SQRL</h1>
+            <div class="notification">
+                <button type="button" class="close" aria-hidden="true">&times</button>
+                Welcome Jennifer! This is your first time as an organiser! To <b>post results</b>, please click on the <b>schedules and scores</b> menu in the top menu,
+                and look for the orange post icon.<img src="img/post.PNG" width="20" style="margin-left: 10px"/>
+            </div>
             <img src="img/homepage-image.jpg" width="250" style="float:right;margin:15px" class="dropshadowclass"/>
             <h2>Background</h2>
             <p>
@@ -293,7 +298,11 @@
             }, 500);
         });
 
-        var value = 0;
+        $('.close').click(function(event) {
+            $(".notification").remove();
+        });
+
+            var value = 0;
         var text = ["\"Play Quidditch, have fun, keep fit!\" - H. Potter", "\"SQRL is enjoyable for the whole family\" - R. Weasley", "\"Nothing beats a good competitive Quidditch game\" - D. Malfoy"]
         setInterval(function(){
             $(".back-light-text").stop().css('opacity', '0').html(function (_, oldText) {
